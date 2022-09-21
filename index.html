@@ -94,6 +94,25 @@
                 <a href="">EFFETTUA L'UPGRADE</a>
             </header>
             <div class="wrapper">
+                <div class="navigate">
+                    <ul class="central-nav flex">
+                        <li>In evidenza</li>
+                        <li>Podcast</li>
+                        <li>Classifiche</li>
+                        <li>Generi e mood</li>
+                        <li>Nuove uscite</li>
+                        <li>Scopri</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Recently played</h2>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nemo voluptas eum voluptate quaerat nam ratione ab architecto quae optio in reiciendis, nihil magni rerum natus exercitationem repellat a impedit!
                 Accusantium at ipsam, quod beatae fugit consequuntur saepe iusto, cum, asperiores temporibus animi dolore! Harum saepe quidem nihil eaque corporis, veniam repellat magni ipsa, assumenda illo, officiis hic ad facere.
                 Temporibus molestias voluptate, totam assumenda delectus harum ad repellat similique laudantium recusandae dolorum distinctio incidunt aut quasi repellendus consequuntur cumque suscipit, explicabo iure accusantium in ut? Delectus quae nam iusto!
@@ -127,15 +146,42 @@
         </main>
         <!-- /main -->
         <!-- Footer -->
-        <footer>
-            <div class="nome-brano">
-                <img src="img/sinister.jpeg" alt="">
-                <h3>Sinister</h3>
-                <p>Brano Nome</p>
+        <footer class="flex">
+            <div class="left-footer flex">    
+                <div class="nome-brano flex">
+                    <img class="vert-align sinister" src="img/sinister.jpeg" alt="">
+                    <div class="vert-align song">
+                        <h3 class="vert-align">Sinister</h3>
+                        <p class="vert-align">Brano Nome</p>
+                    </div>
+                </div>
+                <div class="favorite flex">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
             </div>
-            <div class="favorite"></div>
-            <div class="player"></div>
-            <div class="volume"></div>
+            <div class="central-footer flex">
+                <div class="player flex">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-light fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="range">
+                    <input type="range" id="vol" name="vol" min="0" max="50">
+                </div>
+            </div>      
+            <div class="right-footer flex">
+                <div class="volume flex">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-sharp fa-solid fa-volume"></i>
+                </div>
+                <div class="range">
+                    <input type="range" id="vol" name="vol" min="0" max="50">
+                </div>
+            </div>        
         </footer>
     </div>
 </body>

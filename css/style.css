@@ -37,6 +37,10 @@ hr{
 }
 
 /* UTILITIES */
+.flex{
+    display: flex;
+}
+
 .mg1rem{
 margin: .7rem 0;
 }
@@ -113,18 +117,7 @@ nav{
 }
 
 
-/* MAIN and Header */
-main{
-    position: absolute;
-    width: calc(100% - 15%);
-    height: calc(100vh - 80px - 70px);
-    left: 15%;
-    top: 70px;
-    overflow-y: scroll;
-    /* DEBUG */
-    background-color: darkgreen;
-}
-
+/* HEADER */
 header{
     width: calc(100% - 15%);
     background-color: black;
@@ -149,42 +142,81 @@ header a{
     padding: 0.5rem 1.5rem;
 }
 
+/* MAIN */
+main{
+    position: absolute;
+    width: calc(100% - 15%);
+    height: calc(100vh - 80px - 70px);
+    left: 15%;
+    top: 70px;
+    overflow-y: scroll;
+    /* DEBUG */
+    background-color: darkgreen;
+}
+
+.central-nav{
+    color: grey;
+    justify-content: center;
+    align-content: center;
+}
+
+.central-nav li{
+    margin: 2rem;
+}
+
 /* FOOTER */
 footer{
-    display: flex;
+    background-color: #282828;
     justify-content: space-between;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 80px;
-    /* DEBUG */
-    background-color: blueviolet;
+}
+
+.left-footer{
+    color: white;
 }
 
 .nome-brano{
-    display: flex;
-    /* DEBUG */
-    background-color: brown;
-    width: 10%;
-    height: 80px;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+.sinister{
+    width: 60px;
+    height: 60px;
+}
+
+.song{
+    margin-left: 0.5rem;
 }
 
 .favorite{
-    /* DEBUG */
-    background-color: blanchedalmond;
-    width: 10%;
-    height: 80px;
+color: grey;
+align-items: center;
+justify-content: space-between;
 }
 
-.player{
-    /* DEBUG */
-    background-color: chartreuse;
-    width: 40%;
-    height: 80px;
+footer i{
+    margin: 1rem;
 }
-.volume{
-    /* DEBUG */
-    background-color:aquamarine;
-    width: 20%;
-    height: 80px;
+.player{
+color: white;
+align-items: center;
+justify-content: space-between;
+}
+
+
+.central-footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-footer{
+    color: white;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1rem;
 }

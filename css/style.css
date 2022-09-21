@@ -1,0 +1,64 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMONS */
+img{
+    width: 100%;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
+}
+
+
+.container{
+    background-color: #141922;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+/* NAV-BAR */
+nav{
+    position: absolute;
+    bottom: 80px;
+    width: 15%;
+    height: calc(100vh - 80px);
+    /* DEBUG */
+    background-color: orange;
+}
+
+/* MAIN and Header */
+main{
+    position: absolute;
+    width: calc(100% - 15%);
+    height: calc(100vh - 80px);
+    left: 15%;
+    /* DEBUG */
+    background-color: darkgreen;
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    /* DEBUG */
+    height: 80px;
+}
+
+/* FOOTER */
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+
+    /* DEBUG */
+    background-color: blueviolet;
+}

@@ -34,12 +34,51 @@ nav{
     background-color: orange;
 }
 
+
+.logo{
+    
+    /* DEBUG */
+    width: 60%;
+    height: 10vh;
+    background-color: dodgerblue;
+}
+
+.menu{
+    /* DEBUG */
+    background-color: aqua;
+    width: 60%;
+    height: 15vh;
+}
+
+.playlist{
+    /* DEBUG */
+    background-color: darkblue;
+    width: 60%;
+    height: 50vh;
+}
+
+.menu-footer{
+    /* DEBUG */
+    background-color: turquoise;
+    width: 60%;
+    height: 15vh;
+}
+
+.login{
+    /* DEBUG */
+    width: 100%;
+    height: 10vh;
+    background-color: yellow;
+}
+
+
 /* MAIN and Header */
 main{
     position: absolute;
     width: calc(100% - 15%);
     height: calc(100vh - 80px);
     left: 15%;
+    overflow-y: scroll;
     /* DEBUG */
     background-color: darkgreen;
 }
@@ -48,17 +87,65 @@ header{
     width: 100%;
     background-color: black;
     opacity: 0.5;
+    /* text-align: end; */
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 999;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    
     /* DEBUG */
     height: 80px;
 }
 
+header a{
+    /* position: relative; */
+    /* top: 30px; */
+    /* margin: 0 10vh; */
+    border-radius: 25px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1.5rem;
+}
+
 /* FOOTER */
 footer{
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 80px;
-
+    height: 80p;
     /* DEBUG */
     background-color: blueviolet;
+}
+
+.nome-brano{
+    /* DEBUG */
+    background-color: brown;
+    width: 10%;
+    height: 80px;
+}
+
+.favorite{
+    /* DEBUG */
+    background-color: blanchedalmond;
+    width: 10%;
+    height: 80px;
+}
+
+.player{
+    /* DEBUG */
+    background-color: chartreuse;
+    width: 40%;
+    height: 80px;
+}
+.volume{
+    /* DEBUG */
+    background-color:aquamarine;
+    width: 20%;
+    height: 80px;
 }

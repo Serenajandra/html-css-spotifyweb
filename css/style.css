@@ -23,52 +23,84 @@ html{
     position: relative;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+hr{
+    margin:0.5rem;
+}
+
+/* UTILITIES */
+.mg1rem{
+margin: .7rem 0;
+}
+
+.vert-align{
+    vertical-align: middle;
+}
+
+.grey{
+    color: grey;
+}
+
+.opacity{
+    opacity: 0.5;
+}
 
 /* NAV-BAR */
 nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     bottom: 80px;
     width: 15%;
-    height: calc(100vh - 80px);
-    /* DEBUG */
-    background-color: orange;
+    height: calc(100vh - 70px);
+    background-color:black;
+    padding-left: 1rem;
 }
-
 
 .logo{
-    
-    /* DEBUG */
+    Margin-top: 1rem;
     width: 60%;
-    height: 10vh;
-    background-color: dodgerblue;
-}
+} 
 
-.menu{
-    /* DEBUG */
-    background-color: aqua;
-    width: 60%;
-    height: 15vh;
+.home,.search,.library,.download{
+    width: 15%;
 }
 
 .playlist{
-    /* DEBUG */
-    background-color: darkblue;
-    width: 60%;
-    height: 50vh;
+   color: grey;
+   line-height: 2rem;
+   margin: 1rem;
+   min-height: 65%;
+}
+.playlist>h3{
+    color: white;
 }
 
 .menu-footer{
-    /* DEBUG */
-    background-color: turquoise;
-    width: 60%;
-    height: 15vh;
+    position: relative;
+    bottom:0;
+}
+
+.profile{
+    width: 10%;
+    border-radius: 50%;
+    background-color: grey;
 }
 
 .login{
+    color: white;
     /* DEBUG */
     width: 100%;
-    height: 10vh;
-    background-color: yellow;
+
 }
 
 
@@ -84,26 +116,22 @@ main{
 }
 
 header{
-    width: 100%;
+    width: calc(100% - 15%);
     background-color: black;
     opacity: 0.5;
-    /* text-align: end; */
     position: fixed;
     top: 0;
-    left:0;
-    z-index: 999;
+    left: 15%;
+    z-index: 990;
     align-items: center;
     justify-content: end;
     display: flex;
     
     /* DEBUG */
-    height: 80px;
+    height: 70px;
 }
 
 header a{
-    /* position: relative; */
-    /* top: 30px; */
-    /* margin: 0 10vh; */
     border-radius: 25px;
     border: 1px solid white;
     text-decoration: none;

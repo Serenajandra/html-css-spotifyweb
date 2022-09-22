@@ -69,7 +69,6 @@ nav{
     top: 0;
     left: 0;
     z-index: 999;
-    /* bottom: 80px; */
     width: 200px;
     height: calc(100vh - 80px);
     background-color:black;
@@ -151,13 +150,10 @@ main{
     left: 200px;
     top: 70px;
     overflow-y: scroll;
-    /* DEBUG */
-    background-color: darkgreen;
 }
 
 /* CENTRAL-NAV */
 .navigate{
-    background-color: aqua;
     width: 100%;
     margin: 0 auto;
 }
@@ -176,6 +172,11 @@ main{
 }
 
 /* PLAYER-WRAPPER */
+
+.wrapper{
+    margin-left: 1rem;
+}
+
 .row{
     justify-content: flex-start;
     align-content: center;
@@ -192,10 +193,16 @@ main{
 
 .col p{
     color: grey;
-    font-size: 0.6em;
+    font-size: 0.7em;
 }
 
-.col img{
+.player-section{
+    margin: 1rem;
+    line-height: 2rem;
+}
+
+.radius{
+    border-radius: 50%;
   
 }
 

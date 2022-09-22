@@ -1,0 +1,14 @@
+@media screen and (max-width: 700px) {
+    /* FOOTER */
+
+    /* Left-footer */
+    .favorite{
+        flex-direction: column;
+        justify-content: center;
+        margin:1rem;
+    }
+
+    footer i{
+        margin: 0 .2rem;
+    }
+}

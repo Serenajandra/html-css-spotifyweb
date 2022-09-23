@@ -23,9 +23,13 @@ html{
 }
 
 a{
-    color: white;
+    color: grey;
     text-decoration: none;
 }
+
+/* a :hover .grey{
+    color: white;
+} */
 
 li{
     list-style: none;
@@ -54,6 +58,10 @@ margin: .7rem 0;
 
 .grey{
     color: grey;
+}
+
+.white{
+    color: white;
 }
 
 .opacity{
@@ -88,7 +96,7 @@ nav{
     width: 30px;
 }
 
-/* PLAYLIST */
+/* PLAYLIST-sidebar*/
 .playlist{
    color: grey;
    line-height: 1.5rem;
@@ -116,6 +124,14 @@ nav{
 
 .nav-footer-icon{
     display: none;
+}
+
+a :hover{
+    color: white;
+}
+
+li :hover{
+    color: white;
 }
 
 

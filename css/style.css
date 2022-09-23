@@ -43,6 +43,7 @@ h2{
     color: white;
 }
 
+
 /* UTILITIES */
 .flex{
     display: flex;
@@ -67,6 +68,16 @@ margin: .7rem 0;
 .opacity{
     opacity: 0.5;
 }
+
+.mirror{
+    transform: scaleX(-1);
+ }
+
+ .radius{
+    border-radius: 50%; 
+}
+
+
 
 /* SIDE-BAR */
 nav{
@@ -126,13 +137,10 @@ nav{
     display: none;
 }
 
-a :hover{
+nav a:hover{
     color: white;
 }
 
-li :hover{
-    color: white;
-}
 
 
 /* HEADER */
@@ -150,12 +158,23 @@ header{
     height: 70px;
 }
 
-header a{
+.upgrade-btn{
     border-radius: 25px;
     border: 1px solid white;
     text-decoration: none;
     color: white;
+    margin-right: 1rem;
     padding: 0.5rem 1.5rem;
+    opacity: 1;
+}
+
+/* .no-opacity {
+    background-color: black;
+    color: white;
+} */
+
+header a:hover {
+    transform:scale(1.1);
 }
 
 /* MAIN */
@@ -187,6 +206,10 @@ main{
     margin: 1rem;
 }
 
+.central-nav li a:hover{
+    color: white;
+}
+
 /* PLAYER-WRAPPER */
 
 .wrapper{
@@ -204,8 +227,9 @@ main{
     margin:0.5rem;
     text-align: center;
     color: white;
- 
 }
+
+
 
 .col p{
     color: grey;
@@ -217,11 +241,25 @@ main{
     line-height: 2rem;
 }
 
-.radius{
-    border-radius: 50%;
-  
+.play-now{
+    position: relative;
+}
+.play-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    display: none;
 }
 
+.col .play-now:hover .play-logo{
+    display: block;
+}
+
+.play-now:hover img{
+opacity: 0.4;
+}
 
 /* FOOTER */
 footer{
@@ -256,11 +294,20 @@ footer i{
     margin-left: 0.5rem;
 }
 
+.song p:hover{
+    text-decoration: underline;
+}
+
 .favorite{
 color: grey;
 align-items: center;
 justify-content: space-between;
 }
+
+.favorite i:hover{
+    color: white;
+}
+
 
 /* CENTRAL-FOOTER */
 .central-footer{
@@ -270,6 +317,7 @@ justify-content: space-between;
     width: 30%;
     height: 100%;
 }
+
 .player{
 color: white;
 align-items: center;
@@ -277,6 +325,11 @@ justify-content: space-between;
 height: 100%;
 width: 100%;
 }
+
+.player .fa-circle-play:hover{
+    transform:scale(1.2);
+}
+
 
 /* RIFHT-FOOTER */
 .right-footer{
@@ -292,6 +345,7 @@ width: 100%;
     height: 100%;
     align-items: center;
     justify-content: center;
+    
 }
 
 .range{

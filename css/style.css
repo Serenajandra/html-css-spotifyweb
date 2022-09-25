@@ -206,8 +206,15 @@ main{
     margin: 1rem;
 }
 
+
+
 .central-nav li a:hover{
     color: white;
+}
+
+.green-underline{
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid greenyellow;
 }
 
 /* PLAYER-WRAPPER */
@@ -318,6 +325,7 @@ justify-content: space-between;
     height: 100%;
 }
 
+
 .player{
 color: white;
 align-items: center;
@@ -330,6 +338,36 @@ width: 100%;
     transform:scale(1.2);
 }
 
+.play-bar{
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.playing{
+    background-color: rgb(22, 236, 22);
+    width: 30%;
+    height: 100%;
+}
+
+.play-bar span{
+    color: white;
+    vertical-align: middle;
+    margin: 0 1rem;
+
+}
+
+.range{
+    width:100%;
+    height: 30%;
+    background-color: lightslategray;
+}
+
+.central-footer .range:hover .playing{
+height: 150%;
+}
 
 /* RIFHT-FOOTER */
 .right-footer{
@@ -348,20 +386,10 @@ width: 100%;
 
 }
 
-.range{
+.range-volume{
     width:100%;
-    height: 4%;
+    height: 7%;
     background-color: lightslategray;
-}
-
-.central-footer .range{
-    margin-bottom: 1rem;
-}
-
-.playing{
-    background-color: rgb(22, 236, 22);
-    width: 30%;
-    height: 100%; 
 }
 
 .volume-level{
@@ -370,6 +398,6 @@ width: 100%;
     height: 100%;
 }
 
-.central-footer .range:hover .playing{
-height: 150%;
+.volume a{
+    color: white;
 }
